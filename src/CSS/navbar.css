@@ -1,0 +1,134 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    /* Logo on the left, links on the right */
+    align-items: center;
+    /* Vertically center items within the navbar */
+}
+
+
+.nav-left {
+    padding: 5px;
+    /* Add padding to create space around the logo */
+}
+
+.nav-left img {
+    width: 200 px;
+    /* Adjust the size as needed */
+    height: 160px;
+    /* Adjust the size as needed */
+    /* object-fit: contain;
+    border-radius: 100%;
+    border: 2px solid #d35b5b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+}
+
+.nav-right {
+    margin-right: 20px;
+}
+
+.nav-right img {
+    width: 100%;
+    /* Adjust the size as needed */
+    height: 900px;
+    /* Adjust the size as needed */
+    /* object-fit: contain;
+    border-radius: 100%;
+    border: 2px solid #d35b5b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+    /* Adjust the spacing between links */
+}
+
+.page-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-sticky {
+    width: 100%;
+    margin: auto;
+}
+
+/* Style the container that holds the image */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* Adjust the size as needed to match your image */
+}
+
+
+/* Style the image within the container */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* You can use "cover" or "contain" depending on your preference */
+}
+
+/* Style the overlay text (paragraph) */
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 800px;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    /* Background color with transparency */
+    padding: 20px;
+    /* Adjust the padding as needed */
+    z-index: 1;
+    /* Ensures the text appears in front of the image */
+}
+
+.form-container {
+    position: relative;
+    float: right;
+    flex: 1;
+    width: 50%;
+    /* Let the form container take up half of the available space */
+    padding: 20px;
+    /* Adjust the padding as needed */
+    z-index: 1;
+    /* Ensures the form container appears in front of the image */
+}
+
+/* Style the overlay heading */
+.overlay-heading {
+    font-size: 36px;
+    /* Adjust the font size as needed */
+    font-weight: bold;
+    margin: 0;
+    /* Remove default margin to control spacing */
+}
+
+/* Style the overlay paragraph */
+.overlay-paragraph {
+    font-size: 24px;
+    /* Adjust the font size as needed */
+    margin: 10px 0;
+    /* Adjust the margins as needed */
+    /* Other text styles (color, etc.) can be added as needed */
+}
+
+
+
+/* Add your existing styles for sticky, top-0, and shadow-md as needed */
