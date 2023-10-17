@@ -1,0 +1,145 @@
+.second-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* Adjust the size as needed to match your image */
+}
+
+
+/* Style the image within the container */
+.second-container img {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+    /* You can use "cover" or "contain" depending on your preference */
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    transform-origin: center;
+    /* Set the rotation origin to the center */
+    width: auto;
+    /* Let the width be determined by the content */
+    height: 100%;
+    /* Match the height of the parent container */
+    display: flex;
+    align-items: center;
+    /* Center vertically within the container */
+    justify-content: center;
+    color: #4c33ca;
+}
+
+
+.text-overlay1 {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    /* Stack content vertically */
+    align-items: center;
+    /* Center content horizontally */
+    text-align: center;
+    /* Center text within the container */
+    padding: 20px;
+    /* Add padding for spacing */
+    font-family: "Times New roman", sans-serif;
+    /* Example font family */
+
+    /* Text color */
+}
+
+.overlay1-content {
+    max-width: 600px;
+    /* Set a max-width for the content */
+}
+
+.overlay1-heading {
+    font-size: 36px;
+    /* Adjust the font size */
+    font-weight: bold;
+    /* Add font weight */
+    margin-bottom: 20px;
+    color: #fff;
+    /* Text color */
+    background-color: #333;
+
+    /* Increase spacing between heading and paragraph */
+}
+
+.overlay1-paragraph {
+    /* Styles for the paragraph */
+    font-size: 24px;
+    /* Adjust the font size */
+    line-height: 1.5;
+    /* Increase line height for readability */
+    color: #666;
+    /* Text color */
+    text-align: left;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    background: #dcdcdc;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    position: relative;
+}
+
+.content h2 {
+    color: #fff;
+    font-size: 8em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+
+.content h2:nth-child(2) {
+    color: #03a9f4;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        clip-path: polygon(0% 45%,
+                16% 44%,
+                33% 50%,
+                54% 60%,
+                70% 61%,
+                84% 59%,
+                100% 52%,
+                100% 100%,
+                0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0% 60%,
+                15% 65%,
+                34% 66%,
+                51% 62%,
+                67% 50%,
+                84% 45%,
+                100% 46%,
+                100% 100%,
+                0% 100%);
+    }
+}
