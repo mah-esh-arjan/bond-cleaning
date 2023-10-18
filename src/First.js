@@ -4,7 +4,7 @@ import './CSS/navbar.css';
 
 function First() {
     return (
-        <div className="image-container">
+        <div className="hero-section">
             <img src={service} alt="service" />
             <div class="text-overlay">
                 <h1 class="overlay-heading">Experience the Magic of Immaculate Spaces with Our Bond Cleaning!</h1>
