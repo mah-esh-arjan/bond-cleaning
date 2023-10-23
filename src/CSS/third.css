@@ -18,5 +18,55 @@
     background-color: rgba(0, 0, 255, 0.251);
     display: flex;
     flex-direction: column;
-    max-width: 20 px;
+}
+
+.bubble img {
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    position: absolute;
+    /* You can use "cover" or "contain" depending on your preference */
+}
+
+.bubble {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 20px 15px;
+    height: 220px;
+
+}
+
+.bubble-overlay {
+    height: 100%;
+    padding: 20px;
+    z-index: 1;
+    display: flex;
+}
+
+.bubble-heading {
+    font-size: 36px;
+    display: flex;
+    /* Adjust the font size as needed */
+    font-weight: bold;
+    margin: 0;
+    /* Remove default margin to control spacing */
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.bubble-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    transition: 'background-color 0.3s';
+    background-color: rgb(61, 222, 71);
 }

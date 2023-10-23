@@ -2,6 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+}
+
+.query {
+    margin-left: auto;
+    /* Push the button to the right side */
 }
 
 .nav-left {
@@ -10,14 +16,9 @@
 }
 
 .nav-left img {
-    width: 200 px;
-    /* Adjust the size as needed */
-    height: 160px;
-    /* Adjust the size as needed */
-    /* object-fit: contain;
-    border-radius: 100%;
-    border: 2px solid #d35b5b;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+    max-width: 100%;
+    height: auto;
+
 }
 
 
@@ -25,28 +26,23 @@
     margin-right: 20px;
 }
 
-.nav-right img {
-    width: 100%;
-    /* Adjust the size as needed */
-    height: 900px;
-    /* Adjust the size as needed */
-    /* object-fit: contain;
-    border-radius: 100%;
-    border: 2px solid #d35b5b;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
-}
-
 .nav-links {
-    list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
-    justify-content: center;
+    justify-content: start;
+    height: 50px;
+    align-items: center;
+    background-color: rgba(103, 103, 235, 0.492);
+    list-style: none;
+    flex: 1;
+    width: 100%;
 }
 
 .nav-links li {
-    margin: 0 10px;
+    margin: 0 30px;
     /* Adjust the spacing between links */
+    display: flex;
 }
 
 .page-header {
@@ -200,47 +196,4 @@
     margin: 10px 0;
     /* Adjust the margins as needed */
     /* Other text styles (color, etc.) can be added as needed */
-}
-
-
-
-/* Add your existing styles for sticky, top-0, and shadow-md as needed */
-
-@media (max-width: 768px) {
-    .navbar-container {
-        flex-direction: column;
-        /* Stack items vertically on smaller screens */
-    }
-}
-
-.nav-left img {
-    max-width: 100%;
-    /* Allow the logo to scale with screen size */
-    height: auto;
-    /* Maintain the aspect ratio */
-    object-fit: contain;
-    /* You can use "contain" or "cover" as needed */
-}
-
-.nav-right img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        /* Stack links vertically on smaller screens */
-        text-align: center;
-        /* Center text on smaller screens */
-    }
 }
