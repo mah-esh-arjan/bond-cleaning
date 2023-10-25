@@ -4,13 +4,12 @@ import EmailIcon from '@mui/icons-material/Email';
 import PlaceIcon from '@mui/icons-material/Place';
 
 import './Header.scss'
-import Navbar from '../Navbar/Navbar';
 
 const Header = () => {
   return (
     <header className='header'>
       <div className='container'>
-        <div class="header-content row justify-content-between align-items-center">
+        <div class="header-content row justify-content-between align-items-center py-3">
           <div className='logo'>
             <img src='images/logo.png' alt="Easy bond clean pros" className="img-fluid" />
           </div>
@@ -33,7 +32,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <Navbar />
     </header>
   )
 }
