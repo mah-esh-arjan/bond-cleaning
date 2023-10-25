@@ -6,11 +6,13 @@ import First from './First';
 import Second from './Second';
 import Third from './Third';
 import Header from './components/Header';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <main>
       <Header />
+      <Navbar />
       <First />
       <Second />
       <Third />
