@@ -1,7 +1,6 @@
 import React from 'react';
 import './CSS/third.css';
 import bubble from './img/bubble.jpg';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Third() {
     return (

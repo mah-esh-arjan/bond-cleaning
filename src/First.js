@@ -1,7 +1,6 @@
 import React from 'react';
 import service from './img/service.jpg'
 import './CSS/navbar.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function First() {
 
