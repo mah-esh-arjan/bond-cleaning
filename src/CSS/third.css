@@ -6,15 +6,40 @@
     margin-bottom: 0;
 }
 
+.custom-card {
+    /* Define your desired background color */
+    padding: 10px;
+    /* Add padding to the card body for spacing */
+    transition: transform 0.3s;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+    background-color: #4d4fe7;
+    /* Apply the scale-up effect on hover */
+}
+
 .third-card {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.torn-border {
+    fill: white;
+    /* Fill color when not hovered */
+    transition: fill 0.3s;
+}
+
+.torn-border:hover {
+    fill: blue;
+    /* Fill color on hover to create a glowing effect */
+}
+
+
 .card-spacing {
-    margin: 50px;
     /* Adjust the value to control the spacing between cards */
+    padding: 20px;
     background-color: rgba(0, 0, 255, 0.251);
     display: flex;
     flex-direction: column;
