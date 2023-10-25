@@ -1,3 +1,9 @@
+.navbar {
+  @media (min-width: 768px) {
+    background-color: rgba(103, 103, 235, 0.5)
+  }
+}
+
 .nav-list {
   margin: 0 -15px;
   
