@@ -1,7 +1,6 @@
 import React from 'react';
 import service from './img/service.jpg'
 import './CSS/navbar.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function First() {
 
@@ -18,8 +17,8 @@ function First() {
                         </div>
                     </div>
                     <div className="col-lg-6 col-12">
-                        <div class="form-group">
-                            <div class="form-inside ">
+                        <div className="form-group">
+                            <div className="form-inside ">
                                 <form>
                                     <div>
                                         <input type="text" id="name" name="name" placeholder='Enter your FullName' />

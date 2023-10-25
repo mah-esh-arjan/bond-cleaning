@@ -1,7 +1,6 @@
 import React from 'react';
 import second from './img/second.jpg'
 import './CSS/second.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Second() {
     return (
