@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Second() {
     return (
-        <div className="second-container">
+        <div className="second-container container">
             <img src={second} alt="second" />
             <div class="content vertical-text">
                 <h1>Cleanliness Reigns Supreme</h1>
