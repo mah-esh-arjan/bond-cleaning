@@ -1,0 +1,51 @@
+.custom-card {
+  background: #fff;
+  border: none;
+  transition: all .2s linear;
+
+  &:hover {
+    color: #fff;
+    background: rgba(103, 103, 235, 0.5);
+  }
+}
+
+.bg-pattern {
+  position: absolute;
+  z-index: 99;
+}
+
+.pattern {
+  &-top,
+  &-bottom {
+    left: -1px;
+    right: -1px;
+    height: 40px;
+    background-repeat: repeat-x;
+  }
+
+  &-left,
+  &-right {
+    top: -2px;
+    bottom: -2px;
+    width: 40px;
+    background-repeat: repeat-y;
+  }
+
+  &-top {
+    top: -2px;
+  }
+
+  &-left {
+    left: -2px;
+  }
+
+  &-right {
+    right: -2px;
+    transform: rotate(180deg);
+  }
+
+  &-bottom {
+    bottom: -2px;
+    transform: rotate(180deg);
+  }
+}
