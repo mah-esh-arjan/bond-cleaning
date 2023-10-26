@@ -1,0 +1,59 @@
+.work-icon {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 1px solid rgba(103, 103, 235);
+  padding: 20px;
+  display: flex;
+  background: #fff;
+  color: rgba(103, 103, 235);
+  justify-content: center;
+  align-items: center;
+  transition: all .2s linear;
+  margin: 0 auto 20px;
+  position: relative;
+  z-index: 2;
+
+  &:hover {
+    color: #fff;
+
+    &::before {
+      border-width: 56px;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    border: 0 solid rgba(103, 103, 235);
+    border-radius: 50%;
+    transition: all .2s linear;
+    z-index: -1;
+  }
+
+  .badge {
+    position: absolute;
+    z-index: 3;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background: #82CC09;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.top {
+      top: -5px;
+      right: -5px;
+    }
+
+    &.bottom {
+      bottom: -5px;
+      left: -5px;
+    }
+  }
+}
