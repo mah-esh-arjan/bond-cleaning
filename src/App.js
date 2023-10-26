@@ -4,8 +4,8 @@ import './scss/_general.scss';
 
 import First from './First';
 import Second from './Second';
-import Third from './Third';
 import Header from './components/Header';
+import Services from './views/Services';
 
 function App() {
   return (
@@ -13,7 +13,8 @@ function App() {
       <Header />
       <First />
       <Second />
-      <Third />
+      {/* <Third /> */}
+      <Services />
     </main>
   );
 }
