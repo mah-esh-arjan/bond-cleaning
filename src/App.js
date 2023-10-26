@@ -6,6 +6,7 @@ import First from './First';
 import Second from './Second';
 import Header from './components/Header';
 import Services from './views/Services';
+import HowItWorks from './views/HowItWorks';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Second />
       {/* <Third /> */}
       <Services />
+      <HowItWorks />
     </main>
   );
 }
