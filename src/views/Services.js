@@ -47,7 +47,7 @@ const Services = () => {
               {
                 CARDS_DATA.map(cardItem => {
                   return (
-                    <li className='col-4 mb-5 px-2'  key={cardItem.id}>
+                    <li className='col-12 col-sm-6 col-md-4 mb-5 px-2'  key={cardItem.id}>
                       <CustomCard className='h-100' title={cardItem.title} description={cardItem.description} />
                     </li>
                   )
