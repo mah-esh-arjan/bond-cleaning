@@ -3,11 +3,10 @@ import service from './img/service.jpg'
 import './CSS/navbar.css';
 
 function First() {
-
     return (
-        <div className="container">
-            <div className="hero-section" style={{ backgroundImage: `url(${service})`, backgroundSize: 'cover', backgroundPosition: '50% 50%' }}>
-                <div className="row container">
+        <section className="hero-section" style={{ backgroundImage: `url(${service})`, backgroundSize: 'cover', backgroundPosition: '50% 50%' }}>
+            <div className="container">
+                <div className="row">
                     <div className="col-lg-6 col-12">
                         <div className="text-overlay">
                             <h1 className="overlay-heading">Experience the Magic of Immaculate Spaces with Our Bond Cleaning!</h1>
@@ -42,7 +41,7 @@ function First() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
