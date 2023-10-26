@@ -52,6 +52,10 @@
     z-index: 10;
   }
 
+  .close-icon {
+    transform: rotate(180deg);
+  }
+
   .header-content {
     transform: translateX(0);
   }
@@ -114,4 +118,5 @@
   position: absolute;
   top: 15px;
   right: 20px;
+  transition: transform .4s linear;
 }
