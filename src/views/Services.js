@@ -6,7 +6,7 @@ const CARDS_DATA = [
   {
     id: 1,
     title: 'end of lease cleaning',
-    description: 'Get comprehensive bond clean Adelaide service for a smooth exit. We sanitize, scrub, and polish, leaving no corner untouched. Get your bond back hassle-free.'
+    description: 'Get comprehensive bond clean Adelaide service for a smooth exit. We sanitize, scrub, and polish, leaving no corner untouched. Get your bond back hassle-free. Get comprehensive bond clean Adelaide service for a smooth exit.'
   },
   {
     id: 2,
@@ -37,18 +37,22 @@ const CARDS_DATA = [
 
 const Services = () => {
   return (
-    <section id="services">
+    <section id="services" className='text-center py-5' style={{ backgroundColor: '#F2F6FF' }}>
       <div className="container">
-        <div className="block-header">
+        <div className="block-header mb-5">
           <h2>Our services range:</h2>
         </div>
         <div className="list-holder">
-          <ul className="services-list">
-            <li>
+          <ul className="services-list d-flex flex-wrap">
               {
-                CARDS_DATA.map(cardItem => <CustomCard key={cardItem.id} title={cardItem.title} description={cardItem.description} />)
+                CARDS_DATA.map(cardItem => {
+                  return (
+                    <li className='col-4 mb-5 px-2'  key={cardItem.id}>
+                      <CustomCard className='h-100' title={cardItem.title} description={cardItem.description} />
+                    </li>
+                  )
+                })
               }
-            </li>
           </ul>
         </div>
       </div>
