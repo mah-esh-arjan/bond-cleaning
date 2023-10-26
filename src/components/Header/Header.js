@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import PlaceIcon from '@mui/icons-material/Place';
@@ -7,10 +7,27 @@ import ClearIcon from '@mui/icons-material/Clear';
 import './Header.scss'
 import Navbar from '../Navbar';
 
+const ACTIVE_NAV_CLASS = 'navbar-active'
+
 const Header = () => {
   const toggleMenu = () => {
-    document.body.classList.toggle('navbar-active')
+    document.body.classList.toggle(ACTIVE_NAV_CLASS)
   }
+
+  useEffect(() => {
+    const hideOnClickOutside = (e) => {
+      if(e.target.classList.contains('burger-menu') || e.target.closest('.burger-menu')) return
+      if(e.target.classList.contains('header-content') || e.target.closest('.header-content')) return
+
+      document.body.classList.remove(ACTIVE_NAV_CLASS)
+    }
+
+    document.body.addEventListener('click', hideOnClickOutside)
+
+    return () => {
+      document.body.removeEventListener('click', hideOnClickOutside)
+    }
+  }, [])
 
   return (
     <header>
