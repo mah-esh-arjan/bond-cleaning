@@ -4,7 +4,7 @@ import './WorkIcon.scss'
 
 const WorkIcon = ({ children }) => {
   return (
-    <div className='work-icon'>
+    <div className='work-icon mb-5'>
       {children}
     </div>
   )
