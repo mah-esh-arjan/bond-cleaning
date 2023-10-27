@@ -22,7 +22,7 @@ const HowItWorks = ({ isVisible  }) => {
               </g>
             </svg>
           </div>
-          <ul className="steps-list position-relative d-flex flex-wrap text-center">
+          <ul className="services-list position-relative d-flex flex-wrap text-center">
             <li className='col-4 px-5'>
               <WorkIcon>
               <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
