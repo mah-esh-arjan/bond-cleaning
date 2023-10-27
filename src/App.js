@@ -9,6 +9,7 @@ import Second from './Second';
 import Header from './components/Header';
 import Services from './views/Services';
 import HowItWorks from './views/HowItWorks';
+import Faq from './views/Faq';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <TrackVisibility once offset={200}>
         <HowItWorks />
       </TrackVisibility>
+      <Faq />
     </main>
   );
 }
