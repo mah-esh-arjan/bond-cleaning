@@ -49,8 +49,9 @@ const Projects = () => {
                 return (
                   <div className="slide" key={slide.id}>
                     <div className="slide-content">
-                      <div className="img-holder">
-                        <img src={slide.imgSrc} alt={slide.title} />
+                      <div className="overflow-hidden">
+                        <div className="img-holder" style={{ backgroundImage: `url(${slide.imgSrc})`, paddingTop: '80%' }}>
+                        </div>
                       </div>
                       <div className="text-wrap px-4 py-3">
                         <h3 className='text-capitalize mb-0'>{slide.title}</h3>
