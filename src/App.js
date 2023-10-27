@@ -1,4 +1,6 @@
+import TrackVisibility from 'react-on-screen';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './App.css';
 import './scss/_general.scss';
 
@@ -16,7 +18,9 @@ function App() {
       <Second />
       {/* <Third /> */}
       <Services />
-      <HowItWorks />
+      <TrackVisibility once>
+        <HowItWorks />
+      </TrackVisibility>
     </main>
   );
 }

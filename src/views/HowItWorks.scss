@@ -11,11 +11,16 @@
   .dashed1 {
     stroke-dasharray: 1300;
     stroke-dashoffset: 1300;
-    animation: dash_animation 3s linear forwards;
   }
-
+  
   .dashed2 {
     stroke-dasharray: 5 5;
+  }
+  
+  &.anim-active {
+    .dashed1 {
+      animation: dash_animation 3s linear forwards;
+    }
   }
 }
 
