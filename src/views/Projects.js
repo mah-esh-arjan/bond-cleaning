@@ -1,7 +1,10 @@
 import React from 'react'
 import Slider from "react-slick";
 
+import './Projects.scss'
+
 const SLIDER_SETTINGS = {
+  arrows: false,
   dots: true,
   infinite: true,
   speed: 500,
@@ -36,21 +39,23 @@ const Projects = () => {
   return (
     <section id="projects" className='py-5' style={{ backgroundColor: 'rgb(103, 103, 235)' }}>
       <div className="container">
-        <div className="block-header text-center text-capitalize text-white">
+        <div className="block-header text-center text-capitalize text-white mb-5">
           <h2>Keep your vision to our <br /> latest projects</h2>
         </div>
-        <div className="content-holder">
+        <div className="content-holder pt-5">
           <Slider {...SLIDER_SETTINGS}>
             {
               SLIDES_DATA.map(slide => {
                 return (
                   <div className="slide" key={slide.id}>
-                    <div className="img-holder">
-                      <img src={slide.imgSrc} alt={slide.title} />
-                    </div>
-                    <div className="text-wrap">
-                      <h3>{slide.title}</h3>
-                      <span>{slide.title}</span>
+                    <div className="slide-content">
+                      <div className="img-holder">
+                        <img src={slide.imgSrc} alt={slide.title} />
+                      </div>
+                      <div className="text-wrap px-4 py-3">
+                        <h3 className='text-capitalize mb-0'>{slide.title}</h3>
+                        <span>{slide.title}</span>
+                      </div>
                     </div>
                   </div>
                 )
