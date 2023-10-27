@@ -1,0 +1,57 @@
+#projects {
+  overflow: hidden;
+
+  .content-holder {
+    margin: 0 -150px;
+  }
+
+  .slide {
+    padding: 0 20px;
+  }
+
+  .slick-list {
+    transform: translateX(150px);
+    padding: 60px 0;
+  }
+
+  .slick-slide {
+    &:nth-child(2n) {
+      .slide {
+        margin-top: -60px;
+      }
+    }
+  }
+
+  .slick-dots {
+    button {
+      &::before {
+        color: white;
+        opacity: 1;
+        font-size: 10px;
+        line-height: 1;
+      }
+    }
+
+    .slick-active {
+      position: relative;
+
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -8px;
+        left: -2px;
+        border: 1px solid white;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+      }
+    }
+  }
+  
+  .slide-content {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
