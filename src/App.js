@@ -1,5 +1,7 @@
 import TrackVisibility from 'react-on-screen';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import './App.css';
 import './scss/_general.scss';
@@ -10,6 +12,7 @@ import Header from './components/Header';
 import Services from './views/Services';
 import HowItWorks from './views/HowItWorks';
 import Faq from './views/Faq';
+import Projects from './views/Projects';
 
 function App() {
   return (
@@ -22,6 +25,7 @@ function App() {
       <TrackVisibility once offset={200}>
         <HowItWorks />
       </TrackVisibility>
+      <Projects />
       <Faq />
     </main>
   );
