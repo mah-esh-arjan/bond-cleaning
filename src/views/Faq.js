@@ -31,7 +31,11 @@ const Faq = () => {
     <section id='faq' style={{ backgroundColor: '#F2F6FF' }}>
       <div className="container">
         <div className="row">
-          <div className="col-12 col-md-6"></div>
+          <div className="col-12 col-md-6">
+            <div className="img-holder">
+              <img src="images/faq_img02.png" alt="cleaner" />
+            </div>
+          </div>
           <div className="col-12 col-md-6">
             <div className="block-header mb-5">
               <h3>Frequently Asked Question from Our Clients</h3>
@@ -40,7 +44,7 @@ const Faq = () => {
               {
                 FAQ_DATA.map(item => {
                   return (
-                    <Accordion.Item eventKey={item.id} key={item.id} className='mb-5 p-3'>
+                    <Accordion.Item eventKey={item.id} key={item.id} className='mb-4 p-3'>
                       <Accordion.Header className='position-relative pr-3 font-weight-bold'>
                         {item.question}
                         <div className="accordion-icon"></div>
