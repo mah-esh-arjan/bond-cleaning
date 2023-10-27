@@ -11,18 +11,22 @@ const SLIDER_SETTINGS = {
 
 const SLIDES_DATA = [
   {
+    id: 0,
     title: 'outdoor cleaning',
     imgSrc: 'images/img01.jpg'
   },
   {
+    id: 1,
     title: 'car cleaning',
     imgSrc: 'images/img02.jpg'
   },
   {
+    id: 2,
     title: 'furniture cleaning',
     imgSrc: 'images/img03.jpg'
   },
   {
+    id: 3,
     title: 'kitchen cleaning',
     imgSrc: 'images/img04.jpg'
   },
@@ -37,7 +41,21 @@ const Projects = () => {
         </div>
         <div className="content-holder">
           <Slider {...SLIDER_SETTINGS}>
-
+            {
+              SLIDES_DATA.map(slide => {
+                return (
+                  <div className="slide" key={slide.id}>
+                    <div className="img-holder">
+                      <img src={slide.imgSrc} alt={slide.title} />
+                    </div>
+                    <div className="text-wrap">
+                      <h3>{slide.title}</h3>
+                      <span>{slide.title}</span>
+                    </div>
+                  </div>
+                )
+              })
+            }
           </Slider>
         </div>
       </div>
