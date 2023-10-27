@@ -18,7 +18,7 @@ function App() {
       <Second />
       {/* <Third /> */}
       <Services />
-      <TrackVisibility once>
+      <TrackVisibility once offset={200}>
         <HowItWorks />
       </TrackVisibility>
     </main>
