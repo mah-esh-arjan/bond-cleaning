@@ -2,11 +2,11 @@
   width: 110px;
   height: 110px;
   border-radius: 50%;
-  border: 1px solid rgba(103, 103, 235);
+  border: 1px solid rgb(103, 103, 235);
   padding: 20px;
   display: flex;
   background: #fff;
-  color: rgba(103, 103, 235);
+  color: rgb(103, 103, 235);
   justify-content: center;
   align-items: center;
   transition: all .2s linear;
@@ -25,7 +25,7 @@
   &::before {
     content: '';
     position: absolute;
-    border: 0 solid rgba(103, 103, 235);
+    border: 0 solid rgb(103, 103, 235);
     border-radius: 50%;
     transition: all .2s linear;
     z-index: -1;
