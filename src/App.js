@@ -10,6 +10,7 @@ import Header from './components/Header';
 import Services from './views/Services';
 import HowItWorks from './views/HowItWorks';
 import Faq from './views/Faq';
+import Projects from './views/Projects';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <HowItWorks />
       </TrackVisibility>
       <Faq />
+      <Projects />
     </main>
   );
 }
