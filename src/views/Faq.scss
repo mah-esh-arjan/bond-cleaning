@@ -1,0 +1,64 @@
+#faq {
+  .accordion-item,
+  .accordion-button {
+    background: white;
+    border: none;
+    box-shadow: none;
+  }
+
+  .accordion-icon {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgb(103, 103, 235);
+    transition: all .2s linear;
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      border-radius: 5px;
+      background: white;
+      transition: all .2s linear;
+    }
+
+    &::after {
+      width: 3px;
+      opacity: 0;
+      top: 10px;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &::before {
+      height: 3px;
+      left: 10px;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .collapsed {
+    .accordion-icon {
+      background: rgba(103, 103, 235, 0.2);
+      
+      &::after,
+      &::before {
+        background: rgb(103, 103, 235);
+      }
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  .accordion-button::after {
+    display: none;
+  }
+}
