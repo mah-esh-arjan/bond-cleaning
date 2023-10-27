@@ -25,8 +25,8 @@ function App() {
       <TrackVisibility once offset={200}>
         <HowItWorks />
       </TrackVisibility>
-      <Faq />
       <Projects />
+      <Faq />
     </main>
   );
 }
