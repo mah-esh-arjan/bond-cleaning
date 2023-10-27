@@ -28,7 +28,7 @@ const FAQ_DATA = [
 
 const Faq = () => {
   return (
-    <section id='faq' style={{ backgroundColor: '#F2F6FF' }}>
+    <section id='faq' style={{ backgroundColor: '#F2F6FF' }} className='py-5'>
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6">
@@ -45,8 +45,8 @@ const Faq = () => {
                 FAQ_DATA.map(item => {
                   return (
                     <Accordion.Item eventKey={item.id} key={item.id} className='mb-4 p-3'>
-                      <Accordion.Header className='position-relative pr-3 font-weight-bold'>
-                        {item.question}
+                      <Accordion.Header className='position-relative pr-3'>
+                        <strong>{item.question}</strong>
                         <div className="accordion-icon"></div>
                       </Accordion.Header>
                       <Accordion.Body>
