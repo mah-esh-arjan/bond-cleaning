@@ -9,6 +9,8 @@ import './scss/_general.scss';
 import First from './First';
 import Second from './Second';
 import Header from './components/Header';
+import Footer from './components/Footer';
+import Copyright from './components/Copyright';
 import Services from './views/Services';
 import HowItWorks from './views/HowItWorks';
 import Faq from './views/Faq';
@@ -31,6 +33,8 @@ function App() {
         <Faq />
       </TrackVisibility>
       <Testimonials />
+      <Footer />
+      <Copyright />
     </main>
   );
 }
