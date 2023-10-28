@@ -1,0 +1,75 @@
+#testimonials {
+  .slick-list {
+    padding: 50px 0;
+  }
+
+  .slide {
+    position: relative;
+    padding: 0 15px;
+
+    .icon-holder {
+      position: absolute;
+      top: -40px;
+      left: 50px;
+      font-size: 60px;
+      line-height: 1;
+      width: 80px;
+      height: 80px;
+      background: rgb(53, 53, 225);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      color: white;
+    }
+  }
+  
+  .slide-content {
+    border-radius: 10px;
+    background: white;
+    padding: 60px 40px 40px;
+  }
+
+  .content-holder {
+    margin: 0 -15px;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .text-lg {
+    font-size: 25px;
+    line-height: 1;
+    color: rgb(103, 103, 235);
+    text-transform: capitalize;
+  }
+
+  
+  .slick-dots {
+    li {
+      width: auto;
+      margin: 0 10px;
+    }
+
+    button {
+      position: relative;
+      width: 18px;
+      height: 18px;
+      background: rgba($color: #000000, $alpha: .4);
+      border-radius: 50%;
+      transition: all .2s linear;
+
+      &::before {
+        content: none;
+      }
+    }
+
+    .slick-active {
+      button {
+        background: rgba($color: #fff, $alpha: .4);
+        width: 35px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
