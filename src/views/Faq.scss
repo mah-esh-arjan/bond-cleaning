@@ -67,4 +67,17 @@
   .accordion-button::after {
     display: none;
   }
+
+  .img-holder {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all .5s linear;
+  }
+
+  &.anim-active {
+    .img-holder {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 }
