@@ -13,6 +13,7 @@ import Services from './views/Services';
 import HowItWorks from './views/HowItWorks';
 import Faq from './views/Faq';
 import Projects from './views/Projects';
+import Testimonials from './views/Testimonials';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       </TrackVisibility>
       <Projects />
       <Faq />
+      <Testimonials />
     </main>
   );
 }
