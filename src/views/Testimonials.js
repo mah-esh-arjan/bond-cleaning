@@ -60,7 +60,7 @@ const Testimonial = () => {
         <div className="content-holder">
           <Slider {...SLIDER_SETTINGS}>
             {
-              SLIDES_DATA.map(slide => <TestimonialSlide {...slide} />)
+              SLIDES_DATA.map(slide => <TestimonialSlide key={slide.id} {...slide} />)
             }
           </Slider>
         </div>
