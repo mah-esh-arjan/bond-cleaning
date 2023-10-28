@@ -30,7 +30,7 @@ const Header = () => {
   }, [])
 
   return (
-    <header>
+    <header className='header'>
       <div className="topbar d-md-none">
         <div className="container">
           <div className="d-flex justify-content-between align-items-center py-2">
