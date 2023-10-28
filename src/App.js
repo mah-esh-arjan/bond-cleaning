@@ -9,10 +9,13 @@ import './scss/_general.scss';
 import First from './First';
 import Second from './Second';
 import Header from './components/Header';
+import Footer from './components/Footer';
+import Copyright from './components/Copyright';
 import Services from './views/Services';
 import HowItWorks from './views/HowItWorks';
 import Faq from './views/Faq';
 import Projects from './views/Projects';
+import Testimonials from './views/Testimonials';
 
 function App() {
   return (
@@ -26,7 +29,12 @@ function App() {
         <HowItWorks />
       </TrackVisibility>
       <Projects />
-      <Faq />
+      <TrackVisibility once offset={400}>
+        <Faq />
+      </TrackVisibility>
+      <Testimonials />
+      <Footer />
+      <Copyright />
     </main>
   );
 }

@@ -26,9 +26,9 @@ const FAQ_DATA = [
   }
 ]
 
-const Faq = () => {
+const Faq = ({ isVisible }) => {
   return (
-    <section id='faq' style={{ backgroundColor: '#F2F6FF' }} className='py-5'>
+    <section id='faq' style={{ backgroundColor: '#F2F6FF' }}  className={`py-5 ${isVisible ? 'anim-active' : ''}`}>
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6">
@@ -44,10 +44,12 @@ const Faq = () => {
               {
                 FAQ_DATA.map(item => {
                   return (
-                    <Accordion.Item eventKey={item.id} key={item.id} className='mb-4 p-3'>
-                      <Accordion.Header className='position-relative pr-3'>
-                        <strong>{item.question}</strong>
-                        <div className="accordion-icon"></div>
+                    <Accordion.Item eventKey={item.id} key={item.id} className='mb-4'>
+                      <Accordion.Header>
+                        <div className="position-relative py-3 w-100" style={{ paddingRight: '55px' }}>
+                          <strong>{item.question}</strong>
+                          <div className="accordion-icon"></div>
+                        </div>
                       </Accordion.Header>
                       <Accordion.Body>
                         {item.answer}
