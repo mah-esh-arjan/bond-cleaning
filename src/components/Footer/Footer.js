@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='footer'>
+    <footer className='footer py-5' style={{ backgroundColor: '#F2F6FF' }}>
       <div className="container">
         <div className="row">
           <div className="col-md-3 px-3">
@@ -39,7 +39,20 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="col-md-3 px-3"></div>
+          <div className="col-md-3 px-3">
+            <div className="block-header">
+              <h3>newsletter</h3>
+            </div>
+            <div className="text-wrap">
+              <span>Subscribe our newsletter to get our latest update & news</span>
+            </div>
+            <div className="input-group">
+
+            </div>
+            <div className="button-group">
+              
+            </div>
+          </div>
         </div>
       </div>
     </footer>
