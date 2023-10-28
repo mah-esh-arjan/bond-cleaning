@@ -57,7 +57,7 @@ const Testimonial = () => {
         <div className="block-header text-center text-white mb-5">
             <h2>Providing the Best Services<br />for our Customers</h2>
         </div>
-        <div className="content-holder">
+        <div className="content-holder pb-5">
           <Slider {...SLIDER_SETTINGS}>
             {
               SLIDES_DATA.map(slide => <TestimonialSlide key={slide.id} {...slide} />)
