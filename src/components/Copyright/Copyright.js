@@ -2,7 +2,7 @@ import React from 'react'
 
 const Copyright = () => {
   return (
-    <div className="copyright-block py-2" style={{ backgroundColor: 'rgb(103, 103, 235)'}}>
+    <div className="copyright-block py-3" style={{ backgroundColor: 'rgb(103, 103, 235)'}}>
       <div className="container">
         <div className="d-flex flex-wrap justify-content-between text-white">
           <div className="text-wrap">
