@@ -35,6 +35,23 @@ const SLIDES_DATA = [
   },
 ]
 
+const ProjectSlide = ({ imgSrc, title }) => {
+  return (
+    <div className="slide">
+      <div className="slide-content">
+        <div className="overflow-hidden">
+          <div className="img-holder" style={{ backgroundImage: `url(${imgSrc})`, paddingTop: '80%' }}>
+          </div>
+        </div>
+        <div className="text-wrap px-4 py-3">
+          <h3 className='text-capitalize mb-0'>{title}</h3>
+          <span>{title}</span>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 const Projects = () => {
   return (
     <section id="projects" className='py-5' style={{ backgroundColor: 'rgb(103, 103, 235)' }}>
@@ -45,22 +62,7 @@ const Projects = () => {
         <div className="content-holder pt-5">
           <Slider {...SLIDER_SETTINGS}>
             {
-              SLIDES_DATA.map(slide => {
-                return (
-                  <div className="slide" key={slide.id}>
-                    <div className="slide-content">
-                      <div className="overflow-hidden">
-                        <div className="img-holder" style={{ backgroundImage: `url(${slide.imgSrc})`, paddingTop: '80%' }}>
-                        </div>
-                      </div>
-                      <div className="text-wrap px-4 py-3">
-                        <h3 className='text-capitalize mb-0'>{slide.title}</h3>
-                        <span>{slide.title}</span>
-                      </div>
-                    </div>
-                  </div>
-                )
-              })
+              SLIDES_DATA.map(slide => <ProjectSlide key={slide.id} {...slide} />)
             }
           </Slider>
         </div>
