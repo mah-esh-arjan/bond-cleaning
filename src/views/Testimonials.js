@@ -36,6 +36,20 @@ const SLIDES_DATA = [
   },
 ]
 
+const TestimonialSlide = ({ testimonial, user }) => {
+  return (
+    <div className="slide">
+      <div className="icon-holder">
+        <FormatQuoteIcon fontSize='inherit' />
+      </div>
+      <div className="slide-content">
+        <p>{testimonial}</p>
+        <strong className='text-lg'>{user}</strong>
+      </div>
+    </div>
+  )
+}
+
 const Testimonial = () => {
   return (
     <section id='testimonials' className='py-5' style={{ backgroundColor: 'rgb(103, 103, 235)' }}>
@@ -46,19 +60,7 @@ const Testimonial = () => {
         <div className="content-holder">
           <Slider {...SLIDER_SETTINGS}>
             {
-              SLIDES_DATA.map(slide => {
-                return (
-                  <div className="slide" key={slide.id}>
-                    <div className="icon-holder">
-                      <FormatQuoteIcon fontSize='inherit' />
-                    </div>
-                    <div className="slide-content">
-                      <p>{slide.testimonial}</p>
-                      <strong className='text-lg'>{slide.user}</strong>
-                    </div>
-                  </div>
-                )
-              })
+              SLIDES_DATA.map(slide => <TestimonialSlide {...slide} />)
             }
           </Slider>
         </div>
