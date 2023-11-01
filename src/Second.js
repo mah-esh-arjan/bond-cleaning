@@ -1,15 +1,50 @@
 import React from 'react';
 import second from './img/second.jpg'
 import './CSS/second.css';
+import { motion } from 'framer-motion'
 
-function Second() {
+export const bottomVariants = {
+    hidden: {
+        y: 200,
+        overflow: "hidden",
+    },
+    visible: {
+        y: 0,
+        opacity: 1,
+        overflow: "visible",
+        transition: {
+            type: "spring",
+            stiffness: "40",
+            velocity: "1",
+        },
+    },
+};
+
+export const leftVariants = {
+    hidden: {
+        x: -200,
+        overflow: "hidden",
+    },
+    visible: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            type: "spring",
+            stiffness: "40",
+            velocity: "1",
+        },
+    },
+};
+
+
+const Second = () => {
     return (
-        <div className="second-container container">
+        <div className="second-container container ">
             <div className="row">
-                <div className="cleaner col-lg-6 col-12">
+                <motion.div className="cleaner col-lg-6 col-12" initial="hidden" whileHover={{ scale: 1.05, transition: { duration: 1 }, }} viewport={{ once: true }} whileInView={'visible'} variants={leftVariants}>
                     <img src={second} alt="second" />
-                </div>
-                <div className="content vertical-text col-lg-1 d-lg-block d-none">
+                </motion.div>
+                <div className="vertical-text col-lg-1 d-lg-block d-none">
                     <h1>Cleanliness Reigns Supreme</h1>
                 </div>
                 <div className="text-overlay1 col-lg-5 col-12">
@@ -24,7 +59,6 @@ function Second() {
                 </div>
             </div>
         </div>
-
     )
 }
 

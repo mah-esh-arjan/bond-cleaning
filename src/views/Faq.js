@@ -28,7 +28,7 @@ const FAQ_DATA = [
 
 const Faq = ({ isVisible }) => {
   return (
-    <section id='faq' style={{ backgroundColor: '#F2F6FF' }}  className={`py-5 ${isVisible ? 'anim-active' : ''}`}>
+    <section id='faq' style={{ backgroundColor: '#F2F6FF' }} className={`py-5 ${isVisible ? 'anim-active' : ''}`}>
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6">

@@ -3,6 +3,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import PlaceIcon from '@mui/icons-material/Place';
 import ClearIcon from '@mui/icons-material/Clear';
+import { useNavigate } from 'react-router-dom';
 
 import './Header.scss'
 import Navbar from '../Navbar';
@@ -10,14 +11,21 @@ import Navbar from '../Navbar';
 const ACTIVE_NAV_CLASS = 'navbar-active'
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate('/about-us');
+  };
+
   const toggleMenu = () => {
     document.body.classList.toggle(ACTIVE_NAV_CLASS)
   }
 
+
   useEffect(() => {
     const hideOnClickOutside = (e) => {
-      if(e.target.classList.contains('burger-menu') || e.target.closest('.burger-menu')) return
-      if(e.target.classList.contains('header-content') || e.target.closest('.header-content')) return
+      if (e.target.classList.contains('burger-menu') || e.target.closest('.burger-menu')) return
+      if (e.target.classList.contains('header-content') || e.target.closest('.header-content')) return
 
       document.body.classList.remove(ACTIVE_NAV_CLASS)
     }
@@ -35,7 +43,7 @@ const Header = () => {
         <div className="container">
           <div className="d-flex justify-content-between align-items-center py-2">
             <div className='logo'>
-              <img src='images/logo.png' alt="Easy bond clean pros" />
+              <img src='images/logo.png' alt="Easy bond clean pros" onClick={handleLogoClick} />
             </div>
             <div className="burger-menu" onClick={toggleMenu}>
               <span className="burger-span"></span>
@@ -59,7 +67,7 @@ const Header = () => {
                 <ul className="link-list d-md-flex justify-content-md-end">
                   <li className='col-auto'>
                     <a href="mailto:youremail@example.com">
-                        <EmailIcon /> youremail@example.com
+                      <EmailIcon /> youremail@example.com
                     </a>
                   </li>
                   <li className='col-auto'>

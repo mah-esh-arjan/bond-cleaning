@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import './App.css';
 import './scss/_general.scss';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import First from './First';
 import Second from './Second';
@@ -16,8 +17,9 @@ import HowItWorks from './views/HowItWorks';
 import Faq from './views/Faq';
 import Projects from './views/Projects';
 import Testimonials from './views/Testimonials';
+import About from './views/about-us/about'
 
-function App() {
+function Home() {
   return (
     <main>
       <Header />
@@ -29,13 +31,36 @@ function App() {
         <HowItWorks />
       </TrackVisibility>
       <Projects />
-      <TrackVisibility once offset={400}>
+      <TrackVisibility once offset={200}>
         <Faq />
       </TrackVisibility>
       <Testimonials />
       <Footer />
       <Copyright />
+
     </main>
+  )
+}
+
+function AboutUs() {
+  return (
+    <main>
+      <Header />
+      <Second />
+    </main>
+  )
+}
+
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about-us" element={<AboutUs />} />
+    </Routes>
+
+
+
   );
 }
 

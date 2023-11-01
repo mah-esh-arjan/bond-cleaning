@@ -1,8 +1,14 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router-dom';
 import './Navbar.scss'
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
+  const handleAboutUsClick = () => {
+    navigate('/about-us');
+  };
+
   return (
     <div className="navbar text-center text-md-left">
       <div className="container">
@@ -13,7 +19,7 @@ const Navbar = () => {
                 <a href="#home" className="nav-link">Home</a>
               </li>
               <li className='col-12 col-md-auto'>
-                <a href="#about-us" className="nav-link">About Us</a>
+                <button className="nav-link" onClick={handleAboutUsClick}>About Us</button>
               </li>
               <li className='col-12 col-md-auto'>
                 <a href="#services" className="nav-link">Services</a>
